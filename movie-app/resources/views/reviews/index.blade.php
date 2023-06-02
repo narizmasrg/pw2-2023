@@ -43,11 +43,11 @@
             <tbody>
                 <tr>
                     <td>1</td>
-                    <th>Tune in for Love</th>
-                    <th>Jung ji-woo</th>
+                    <th>Kimetsu no Yaiba</th>
+                    <th>Koyoharu Gotouge</th>
                     <th>7.1</th>
-                    <th>Tune in for Love adalah sebuah film romansa Korea Selatan tahun 2019 garapan Jung Ji-woo. Film tersebut menampilkan Kim Go-eun dan Jung Hae-in.</th>
-                    <th>2019</th>
+                    <th>adalah sebuah seri manga Jepang yang ditulis dan diilustrasikan oleh Koyoharu Gotōge. Ceritanya mengisahkan tentang Tanjiro Kamado, seorang anak laki-laki yang menjadi pembasmi iblis setelah keluarganya dibantai oleh iblis dan adik perempuannya yang bernama Nezuko diubah menjadi iblis.</th>
+                    <th>2016</th>
                     <td>
                         <a href="" class="btn btn-sm btn-primary"> Edit</a>
                         <a href="" class="btn btn-sm btn-dark" onclick="return confirm('Apakah anda yakin ingin menghapus?')"> Delete</a>
@@ -55,10 +55,10 @@
                 </tr>
                 <tr>
                     <td>2</td>
-                    <th>Ditto</th>
-                    <th>Seo Eun Young</th>
-                    <th>9.8</th>
-                    <th>Film Ditto menceritakan tentang kisah cinta remaja dan persahabatan dua orang mahasiswa. </th>
+                    <th>Pengabdi setan 2</th>
+                    <th>Joko Anwar</th>
+                    <th>9.7</th>
+                    <th>Beberapa tahun setelah berhasil menyelamatkan diri dari kejadian mengerikan yang membuat mereka kehilangan ibu dan si bungsu Ian, Rini dan adik-adiknya, Toni dan Bondi, serta Bapak tinggal di rumah susun karena percaya tinggal di rumah susun aman jika terjadi sesuatu karena ada banyak orang. </th>
                     <th>2022</th>
                     <td>
                         <a href="" class="btn btn-sm btn-primary"> Edit</a>
@@ -67,11 +67,11 @@
                 </tr>
                 <tr>
                     <td>3</td>
-                    <th>My Love, My Bride</th>
-                    <th>Im Chan-Sang</th>
-                    <th>8.5</th>
-                    <th>Film ini menceritakan kehidupan pengantin baru Young- Min (Cho Jung Seok) dan Mi-Young (Shin Min A). Young-Min bekerja di instalasi pemerintahan sekaligus penyair dan Mi-Young guru seni lukis. </th>
-                    <th>2014</th>
+                    <th>The Little Mermaid</th>
+                    <th>Rob Marshall</th>
+                    <th>9.1</th>
+                    <th>Ariel, putri Raja Triton yang bungsu sekaligus yang paling membangkang, mendambakan untuk kenal lebih jauh kehidupan di atas laut, dan ketika sedang berkunjung ke daratan, ia jatuh cinta pada Pangeran Eric yang menawan. </th>
+                    <th>2023</th>
                     <td>
                         <a href="" class="btn btn-sm btn-primary"> Edit</a>
                         <a href="" class="btn btn-sm btn-dark" onclick="return confirm('Apakah anda yakin ingin menghapus?')"> Delete</a>
