@@ -2,28 +2,35 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Movie;
 use App\Http\Controllers\Controller;
 use App\Models\Genre;
 use Illuminate\Http\Request;
-use App\Models\Movie;
 
-class MovieController extends Controller {
-    public function index() 
+class MovieController extends Controller
+{
+    /**
+     * Display a listing of the resource.
+     */
+    public function index()
     {
-        $movies = movie::all();
+        $movies = Movie::all();
 
-        return view("movies.index", compact('movies'));
+        return view('movies.index', compact('movies'));
     }
-    /**p
-     * Show the form creating a new resource.
+
+
+    /**
+     * Show the form for creating a new resource.
      */
     public function create()
     {
         $genres = Genre::all();
         return view('movies.create', compact('genres'));
     }
+
     /**
-     * Store a newly created resource in storage
+     * Store a newly created resource in storage.
      */
     public function store(Request $request)
     {
@@ -37,9 +44,9 @@ class MovieController extends Controller {
         ]);
 
         Movie::create($validateData);
-
-        return redirect('/movies')->with('success', 'movie addad successfully');
+        return redirect('/movies')->with('success', 'Movies added successfully');
     }
+
     /**
      * Display the specified resource.
      */
@@ -49,7 +56,7 @@ class MovieController extends Controller {
     }
 
     /**
-     * Show the form for editing the specified resource
+     * Show the form for editing the specified resource.
      */
     public function edit(Movie $movie)
     {
@@ -57,7 +64,7 @@ class MovieController extends Controller {
     }
 
     /**
-     * update the specified resource in storage.
+     * Update the specified resource in storage.
      */
     public function update(Request $request, Movie $movie)
     {
@@ -70,7 +77,6 @@ class MovieController extends Controller {
     public function destroy(Movie $movie)
     {
         $movie->delete();
-
         return redirect('/movies')->with('success', 'movie deleted successfully');
     }
 }
