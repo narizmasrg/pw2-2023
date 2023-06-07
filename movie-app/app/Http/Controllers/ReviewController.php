@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Review;
 use App\Http\Controllers\Controller;
+use App\Models\Movie;
 use Illuminate\Http\Request;
 
 class ReviewController extends Controller
@@ -13,10 +14,9 @@ class ReviewController extends Controller
      */
     public function index()
     {
-        $review = new Review;
-        $data = $review->getAllReviews();
+        $reviews = Review::all();
 
-        return view('reviews/index',['reviews'=> $data]);
+        return view('reviews.index', compact('reviews'));
     }
 
     /**
@@ -24,7 +24,8 @@ class ReviewController extends Controller
      */
     public function create()
     {
-        //
+        $movies = Movie::all();
+        return view('reviews.create', compact('movies'));
     }
 
     /**
@@ -32,7 +33,18 @@ class ReviewController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validateData = $request->validate([
+            'film' => 'required',
+            'user' => 'required',
+            'rating' => 'required',
+            'review' => 'required',
+            'year' => 'required|integer',
+            
+        ]);
+
+        Movie::create($validateData);
+
+        return redirect('/movies')->with('success', 'Movies added successfully');
     }
 
     /**
@@ -48,7 +60,8 @@ class ReviewController extends Controller
      */
     public function edit(Review $review)
     {
-        //
+        $reviews = Review::all();
+        return view('reviews.edit', compact('review', 'genres'));
     }
 
     /**
@@ -64,6 +77,7 @@ class ReviewController extends Controller
      */
     public function destroy(Review $review)
     {
-        //
+        $review->delete();
+        return redirect('/reviews')->with('success', 'review deleted successfully');
     }
 }

@@ -25,7 +25,7 @@
                     <th>User</th>
                     <th>Rating</th>
                     <th>review</th>
-                    <th>tanggal</th>
+                    <th>Year</th>
                     <th>Action</th>
                 </tr>
             </thead>
@@ -36,7 +36,7 @@
                     <th>User</th>
                     <th>Rating</th>
                     <th>review</th>
-                    <th>tanggal</th>
+                    <th>Year</th>
                     <th>Action</th>
                 </tr>
             </tfoot>
@@ -105,4 +105,4 @@
         </table>
     </div>
 </div>
-@endsection
+@endsection 
