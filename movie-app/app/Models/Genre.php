@@ -7,5 +7,12 @@ use Illuminate\Database\Eloquent\Model;
 
 class Genre extends Model
 {
-    protected $fillable = ['nama', 'Deskripsi'];
+    use HasFactory;
+
+    protected $fillable = ['nama', 'deskripsi'];
+
+    public function getAllGenre()
+    {
+        return $this->genres;
+    }
 }

@@ -27,26 +27,22 @@
                 @csrf
                 <div>
                     <label for="film">Film:</label>
-                    <input type="text" id="Film" name="judul">
+                    <input type="text" id="Film" name="film">
                 </div>
                 <div>
                     <label for="user">User:</label>
-                    <input type="text" id="poster" name="poster">
+                    <input type="text" id="user" name="user">
                 </div>
                 <div>
-                    <label for="rating">rating:</label>
-                    <select id="genre" name="genre_id">
-                        @foreach ($genres as $genre)
-                        <option value="{{ $genre->id }}">{{ $genre->nama }}</option>
-                        @endforeach
-                    </select>
+                    <label for="rating">Rating:</label>
+                    <input type="text" id="rating" name="rating">
                 </div>
                 <div>
                     <label for="review">Review:</label>
-                    <input type="text" id="negara" name="negara">
+                    <input type="text" id="rewiew" name="review">
                 </div>
                 <div>
-                    <label for="tahun">Year:</label>
+                    <label for="tahun">Tahun:</label>
                     <input type="text" id="tahun" name="tahun">
                 </div>
                 <button type="submit">Add</button>

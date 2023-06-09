@@ -49,7 +49,7 @@
                     <th>emmanuel@gmail.com</th>
                     <th>user</th>
                     <td>
-                        <a href="" class="btn btn-sm btn-primary"> Edit</a>
+                        <a href="" class="btn btn-sm btn-warning"> Edit</a>
                         <a href="" class="btn btn-sm btn-dark" onclick="return confirm('Apakah anda yakin ingin menghapus?')"> Delete</a>
                     </td>
                 </tr>
@@ -61,7 +61,7 @@
                     <th>ismanabilah@gmail.com</th>
                     <th>user</th>
                     <td>
-                        <a href="" class="btn btn-sm btn-primary"> Edit</a>
+                        <a href="" class="btn btn-sm btn-warning"> Edit</a>
                         <a href="" class="btn btn-sm btn-dark" onclick="return confirm('Apakah anda yakin ingin menghapus?')"> Delete</a>
                     </td>
                 </tr>
@@ -73,7 +73,7 @@
                     <th>elsapadilah@gmail.com</th>
                     <th>user</th>
                     <td>
-                        <a href="" class="btn btn-sm btn-primary"> Edit</a>
+                        <a href="" class="btn btn-sm btn-warning"> Edit</a>
                         <a href="" class="btn btn-sm btn-dark" onclick="return confirm('Apakah anda yakin ingin menghapus?')"> Delete</a>
                     </td>
                 </tr>
@@ -85,7 +85,7 @@
                     <th>nayaputri@gmail.com</th>
                     <th>user</th>
                     <td>
-                        <a href="" class="btn btn-sm btn-primary"> Edit</a>
+                        <a href="" class="btn btn-sm btn-warning"> Edit</a>
                         <a href="" class="btn btn-sm btn-dark" onclick="return confirm('Apakah anda yakin ingin menghapus?')"> Delete</a>
                     </td>
                 </tr>
@@ -97,7 +97,7 @@
                     <th>winni@gmail.com</th>
                     <th>user</th>
                     <td>
-                        <a href="" class="btn btn-sm btn-primary"> Edit</a>
+                        <a href="" class="btn btn-sm btn-warning"> Edit</a>
                         <a href="" class="btn btn-sm btn-dark" onclick="return confirm('Apakah anda yakin ingin menghapus?')"> Delete</a>
                     </td>
                 </tr>

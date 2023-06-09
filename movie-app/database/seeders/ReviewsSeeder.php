@@ -14,20 +14,20 @@ class ReviewsSeeder extends Seeder
     public function run(): void
     {
         Review::create([
-            'film' => 'Seoul Vibe',
-            'user' => 'Moon Hyeon Seong',
-            'rating' => '8.4',
+            'film' => 'Jujutsu kaisen',
+            'user' => 'Gege Akutami',
+            'rating' => '9.4',
             'review' => 'Filmnya sangat bagus',
             'tahun' => '2022-05-12',
 
         ]);
 
         Review::create([
-            'film' => 'Architecture 101',
-            'user' => 'Lee yong-ju',
+            'film' => 'Black Panther',
+            'user' => 'Ryan Coogler',
             'rating' => '8.6',
             'review' => 'Seru banget',
-            'tahun' => '2012-12-07',
+            'tahun' => '2018-12-07',
 
         ]);
 
@@ -41,20 +41,20 @@ class ReviewsSeeder extends Seeder
         ]);
 
         Review::create([
-            'film' => 'Be with You',
-            'user' => 'Lee Jang-hoon',
+            'film' => 'Pengabdi setan 2',
+            'user' => 'Joko Anwar',
             'rating' => '8.5',
             'review' => 'Dramanya bagus',
-            'tahun' => '2018-02-02',
+            'tahun' => '2022-08-04',
 
         ]);
 
         Review::create([
-            'film' => '20th Century Girl',
-            'user' => 'Bang Woo-ri',
+            'film' => 'The Little Mermaid',
+            'user' => 'Rob Mashal',
             'rating' => '9.3',
             'review' => 'seru',
-            'tahun' => '2022-10-01',
+            'tahun' => '2023-05-24',
 
         ]);
     }

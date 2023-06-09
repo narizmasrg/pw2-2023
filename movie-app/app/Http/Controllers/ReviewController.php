@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Models\Review;
 use App\Http\Controllers\Controller;
-use App\Models\Movie;
 use Illuminate\Http\Request;
 
 class ReviewController extends Controller
@@ -15,8 +14,9 @@ class ReviewController extends Controller
     public function index()
     {
         $reviews = Review::all();
+        
 
-        return view('reviews.index', compact('reviews'));
+        return view('reviews.index',compact('reviews'));
     }
 
     /**
@@ -24,8 +24,8 @@ class ReviewController extends Controller
      */
     public function create()
     {
-        $movies = Movie::all();
-        return view('reviews.create', compact('movies'));
+        $reviews = Review::all();
+        return view('reviews.create', compact('reviews'));
     }
 
     /**
@@ -33,18 +33,17 @@ class ReviewController extends Controller
      */
     public function store(Request $request)
     {
-        $validateData = $request->validate([
+        $validatedData = $request->validate([
             'film' => 'required',
             'user' => 'required',
             'rating' => 'required',
             'review' => 'required',
-            'year' => 'required|integer',
+            'tahun' => 'required|date',
             
         ]);
 
-        Movie::create($validateData);
-
-        return redirect('/movies')->with('success', 'Movies added successfully');
+        Review::create($validatedData);
+        return redirect('/reviews')->with('success', 'Review added successfully!');
     }
 
     /**
@@ -60,8 +59,8 @@ class ReviewController extends Controller
      */
     public function edit(Review $review)
     {
-        $reviews = Review::all();
-        return view('reviews.edit', compact('review', 'genres'));
+        
+        return view('reviews.edit', compact('review'));
     }
 
     /**
@@ -69,7 +68,18 @@ class ReviewController extends Controller
      */
     public function update(Request $request, Review $review)
     {
-        //
+        $validatedData = $request->validate([
+            'film' => 'required',
+            'user' => 'required',
+            'rating' => 'required',
+            'review' => 'required',
+            'tahun' => 'required|date',
+            
+        ]);
+    
+        $review->update($validatedData);
+    
+        return redirect('/reviews')->with('success', 'Review updated successfully!');
     }
 
     /**
@@ -78,6 +88,6 @@ class ReviewController extends Controller
     public function destroy(Review $review)
     {
         $review->delete();
-        return redirect('/reviews')->with('success', 'review deleted successfully');
+        return redirect('/reviews')->with('success', 'Review deleted successfully!');
     }
 }
